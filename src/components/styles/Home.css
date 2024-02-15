@@ -2,7 +2,7 @@
     width: 100%;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
 .background {
@@ -15,7 +15,20 @@
     padding-top: 5%;
   }
 
-  .photoCenter{
+  .top-distance {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-container{
     margin-top:10px;
     text-align: center;
     align-items: center;

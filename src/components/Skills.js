@@ -1,9 +1,10 @@
+import './styles/Home.css';
 import Badge from 'react-bootstrap/Badge';
 import Stack from 'react-bootstrap/Stack';
 
 function Skills() {
     return (
-        <div>
+        <div className='top-distance'>
             <Stack direction="horizontal" gap={2}> 
                <Badge pill bg="dark">
                     Vue

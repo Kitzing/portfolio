@@ -4,7 +4,9 @@ import PortfolioItem from './PortfolioItem.js';
 function Portfolio() {
     return (
         <div>
-            <h1>PORTFOLIO</h1>
+            <h1 className='header'>PORTFOLIO</h1>
+            <PortfolioItem />
+            <PortfolioItem />
             <PortfolioItem />
         </div>
     );}

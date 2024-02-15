@@ -7,11 +7,11 @@ function PortfolioItem() {
         <div>
             <Container fluid="md">
                 <Row>
-                    <Col className='image' sm={6}>
+                    <Col sm={6}>
                     <ResponsiveImage
                         src={pic}
-                        width={ 300 }
-                        height={ 450 } />
+                        width={ 500 }
+                        height={ 300 } />
                     </Col>
                     <Col sm={6}>
                       <h2>Name</h2>
@@ -30,7 +30,7 @@ function PortfolioItem() {
             style={ { 
               width,
             } }
-            className="responsive-image">
+            className="responsive-image image">
             <div style={ {
                 paddingBottom: ( height / width * 100 ) + '%'
               } } />

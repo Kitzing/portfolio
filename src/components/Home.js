@@ -7,16 +7,18 @@ import pic from '../resources/pic.svg'
 
 function Home() {
   return (
-    <div id='home' className="wrapper">
+    <div className="wrapper">
       <img className="background" src={background} alt="background" />
       <Container className='container' fluid="md">
-        <Row className="photoCenter">
-          <Col sm={6}> <h1>Sara Kitzing</h1>
+        <Row className="text-container">
+          <Col sm={4}> <h1>Sara Kitzing</h1>
             <p>A front-end developer with an interest in design and users.  I enjoy the challenge of finding admirable solutions and are looking forward to developing and deepen my knowledge.</p>
             <Skills />
-            <Button variant='dark'>More information</Button>
+            <a href="#about">
+              <Button variant='dark' className='top-distance'>More information</Button>
+            </a>
           </Col>
-          <Col sm={6}>
+          <Col sm={6} className='image-container'>
             <ResponsiveImage
                 src={pic}
                 width={ 309 }
