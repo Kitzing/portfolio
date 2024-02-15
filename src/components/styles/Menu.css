@@ -1,0 +1,21 @@
+.nav-background {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .nav-right {
+    text-align: right;
+  }
+  
+  .nav-link {
+    padding-Left: 13px;
+    text-decoration: wavy;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  a{
+    color: rgb(80, 96, 165) !important;
+  }
+  
+  a:hover {
+    color: rgb(17, 20, 31) !important;
+  }
