@@ -8,8 +8,8 @@ function Menu() {
             <Navbar className="nav-background nav-padding" expand="sm" variant="light" sticky="top">
                 <Navbar.Brand className="nav-link" href="#home">SARA KITZING</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto nav-right" pullRight>
+                <Navbar.Collapse className='nav-right' id="basic-navbar-nav">
+                    <Nav className="ml-auto" pullRight>
                         <AnchorLink className="nav-link" href='#home'>HOME</AnchorLink>
                         <AnchorLink className="nav-link" href='#portfolio' > PORTFOLIO </AnchorLink>
                         <AnchorLink className="nav-link" href="#about"> ABOUT ME </AnchorLink>

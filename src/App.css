@@ -17,6 +17,11 @@ p {
   color: black;
 }
 
+.footer {
+  font-size: 13px !important;
+  text-align: center;
+}
+
 /* ------------------- */
 
 .App {

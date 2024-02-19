@@ -11,8 +11,10 @@ function Home() {
       <img className="background" src={background} alt="background" />
       <Container className='container' fluid="md">
         <Row className="text-container">
-          <Col sm={4}> <h1>Sara Kitzing</h1>
-            <p>A front-end developer with an interest in design and users.  I enjoy the challenge of finding admirable solutions and are looking forward to developing and deepen my knowledge.</p>
+          <Col sm={6}> <h1>Sara Kitzing</h1>
+            <div className='about-container'>
+              <p className='about-text'>A front-end developer with an interest in design and users.  I enjoy the challenge of finding admirable solutions and are looking forward to developing and deepen my knowledge.</p>
+            </div>
             <Skills />
             <a href="#about">
               <Button variant='dark' className='top-distance'>More information</Button>
