@@ -1,21 +1,29 @@
 .nav-background {
     background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 10px 36px -11px rgba(151,147,147,0.65);
+    padding: 6px 10px;
   }
 
-  .nav-right {
-    justify-content: flex-end;
-  }
-  
-  .nav-link {
-    padding-Left: 13px;
-    text-decoration: wavy;
-    font-family: 'Playfair Display', serif;
-  }
-  
-  a{
-    color: rgb(17, 20, 31) !important;
-  }
-  
-  a:hover {
-    color: rgb(80, 96, 165) !important;
-  }
+.nav-sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.nav-right {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  padding-Left: 13px;
+  text-decoration: wavy;
+  font-family: 'Playfair Display', serif;
+}
+
+a{
+  color: rgb(17, 20, 31) !important;
+}
+
+a:hover {
+  color: rgb(80, 96, 165) !important;
+}

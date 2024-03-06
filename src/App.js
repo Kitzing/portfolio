@@ -11,15 +11,15 @@ function App() {
     <div>
       <BrowserRouter>
       <Menu />
-      <Home id="home" />
-      <Portfolio id="portfolio" />
-      <About id="about" />
+      <Home />
+      <Portfolio />
+      <About />
       <div id="contact">
-      <div className='contact-container'>
+      <div className='contact'>
       <p> <MdEmail size={20}/> contact(a)sarakitzing.se </p>
     </div>
         <p className='footer'>
-          This portfolio was created with React/Next.js <br />
+          This portfolio was created with React <br />
           © 2024 Sara Kitzing
         </p>
       </div>

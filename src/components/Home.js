@@ -1,13 +1,14 @@
 import './styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Skills from './Skills.js'
 import background from '../resources/header_background.svg';
 import pic from '../resources/pic.svg'
 
 function Home() {
   return (
-    <div className="wrapper">
+    <div id="home" className="wrapper">
       <img className="background" src={background} alt="background" />
       <Container className='container' fluid="md">
         <Row className="text-container">
@@ -16,9 +17,9 @@ function Home() {
               <p className='about-text'>A front-end developer with an interest in design and users.  I enjoy the challenge of finding admirable solutions and are looking forward to developing and deepen my knowledge.</p>
             </div>
             <Skills />
-            <a href="#about">
+            <AnchorLink href='#about'>
               <Button variant='dark' className='top-distance'>More information</Button>
-            </a>
+            </AnchorLink>
           </Col>
           <Col sm={6} className='image-container'>
             <ResponsiveImage

@@ -5,7 +5,6 @@ h1, h2, h3{
 }
 
 .header {
-  padding-top: 100px;
   margin-left: 50px;
   margin-bottom: 20px;
 }
@@ -20,13 +19,20 @@ p {
 .footer {
   font-size: 13px !important;
   text-align: center;
+  margin-top: 10px;
+}
+
+.contact {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 /* ------------------- */
 
-.App {
+/*.App {
   text-align: center;
-}
+}*/
 
 .App-logo {
   height: 40vmin;
