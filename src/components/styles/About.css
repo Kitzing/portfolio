@@ -21,14 +21,14 @@
   }
 
   .icon-size {
-    background-color: #000;
+    background-color: #212529;
     width: 50px;
     height: 50px;
     align-items: center;
   }
 
   .icon-size:hover {
-    background-color: rgb(34, 34, 34) !important;
+    background-color: #424649 !important;
   }
 
   .contact-container {

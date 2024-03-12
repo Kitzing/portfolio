@@ -3,6 +3,32 @@
     margin-bottom: 100px;
 }
 
-.image {
+.portfolio-item {
+    margin-top: 30px;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-align {
     text-align: right;
+}
+
+.portfolio-info{
+width: 500px;
+}
+
+.date-text{
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.portfolio-open{
+    background-color: #BDBACF;
+    margin-top: 30px;
+    padding: 20px 0px;
+    text-align: center;
 }
