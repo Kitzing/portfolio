@@ -8,9 +8,9 @@ import aboutimage from '../resources/about_image.svg'
 
 function About() {
     return (
-        <div id="about"  className='about-section'>
+        <div id="about" style={{marginBottom: '70px'}}>
             <img className="background" src={background} alt="background" />
-            <div className='about-grid'>
+            <div style={{paddingTop: '190px'}}>
               <h1 className='header'>ABOUT</h1>
               <Container fluid="md">
                 <Row>
@@ -27,7 +27,7 @@ function About() {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                       </p>
-                      <p className='education'>
+                      <p style={{fontSize: '15px'}}>
                         <b>Education:</b> <br />
                         MSc. Interaction design and technologies, Chalmers University of Technology<br />
                         BSc. Software engineering, Chalmers University of Technology

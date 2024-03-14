@@ -43,10 +43,6 @@
     justify-content: center;
   }
 
-  .about-text {
-    width: 90%;
-  }
-
   .responsive-image {
     position: relative;
     max-width: 100%;

@@ -12,17 +12,13 @@
     justify-content: flex-end;
 }
 
-.right-align {
-    text-align: right;
-}
-
-.date-text{
+.date-text {
     color: gray;
     font-size: 15px;
     margin-bottom: 5px;
 }
 
-.portfolio-open{
+.portfolio-open {
     background-color: #BDBACF;
     margin-top: 30px;
     padding: 20px 0px;

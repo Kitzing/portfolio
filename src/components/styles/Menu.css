@@ -10,10 +10,6 @@
   z-index: 2;
 }
 
-.nav-right {
-  justify-content: flex-end;
-}
-
 .nav-link {
   padding-Left: 13px;
   text-decoration: wavy;
