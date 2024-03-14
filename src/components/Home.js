@@ -2,7 +2,8 @@ import './styles/Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Skills from './Skills.js'
+import Skills from './helpers/Skills.js'
+import ResponsiveImage from './helpers/ResponsiveImage.js'
 import background from '../resources/header_background.svg';
 import pic from '../resources/pic.svg'
 
@@ -27,28 +28,12 @@ function Home() {
                 width={ 309 }
                 height={ 450 } />
       
-            </Col>
+          </Col>
         </Row>
       </Container>
     </div>
   );
 }
 
-function ResponsiveImage( { src, width, height } ) {
-  return (
-    <div
-      style={ { 
-        width,
-      } }
-      className="responsive-image">
-      <div style={ {
-          paddingBottom: ( height / width * 100 ) + '%'
-        } } />
-      <img
-        src={ src }
-        className="responsive-image__image" />
-    </div>
-  );
-}
 
 export default Home;
