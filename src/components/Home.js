@@ -21,7 +21,7 @@ function Home() {
               <Button variant='dark' className='top-distance'>More information</Button>
             </AnchorLink>
           </Col>
-          <Col sm={6} className='image-container'>
+          <Col sm={5} className='image-container'>
             <ResponsiveImage
                 src={pic}
                 width={ 309 }

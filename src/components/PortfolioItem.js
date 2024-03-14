@@ -1,5 +1,5 @@
 import './styles/Portfolio.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Collapse } from 'react-bootstrap';
 import pic from '../resources/placeholder.jpg'
 import PortfolioItemOpen from './PortfolioItemOpen.js';
 import { useState } from 'react';
@@ -25,13 +25,20 @@ function PortfolioItem({ name, date, info, left }) {
                         <h2>{name}</h2>
                         <p className='date-text'>{date}</p>
                         <p>{info}</p>
-                        <Button variant='dark' onClick={() => setIsOpen(!isOpen)}>{isOpen ? 'Close' : 'See more'}</Button>
+                        <div style={{display: 'flex', justifyContent: 'center'}}>
+                          <Button variant='dark' onClick={() => setIsOpen(!isOpen)} aria-controls='collapseId'>{isOpen ? 'Close' : 'See more'}</Button>
+                        </div>
                       </div>
                       </div>
                     </Col>
                 </Row>
             </Container>
-            <PortfolioItemOpen isOpen={isOpen} />
+            <Collapse in={isOpen}>
+              <div id='collapseId'>
+              <PortfolioItemOpen images={[pic, pic, pic]} />
+              </div>
+            </Collapse>
+            
         </div>     
     )}
 
@@ -46,7 +53,9 @@ function PortfolioItem({ name, date, info, left }) {
                             <h2>{name}</h2>
                             <p className='right-align date-text'>{date}</p>
                             <p className='right-align'>{info}</p>
-                            <Button variant='dark'>See more</Button>
+                          <div style={{display: 'flex', justifyContent: 'center'}}>
+                          <Button variant='dark' onClick={() => setIsOpen(!isOpen)} aria-controls='collapseId'>{isOpen ? 'Close' : 'See more'}</Button>
+                          </div>
                           </div>
                       </div>
                   </Col>
@@ -58,6 +67,11 @@ function PortfolioItem({ name, date, info, left }) {
                   </Col>
               </Row>
           </Container>
+          <Collapse in={isOpen}>
+              <div id='collapseId'>
+              <PortfolioItemOpen images={[pic, pic, pic]} />
+              </div>
+            </Collapse>
       </div>
   )
     

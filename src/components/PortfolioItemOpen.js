@@ -1,72 +1,25 @@
 import './styles/Portfolio.css';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import pic from '../resources/placeholder.jpg'
+import { Container, Row, Col } from 'react-bootstrap';
 
-function PortfolioItemOpen({ isOpen }) {
-  if(isOpen){
+function PortfolioItemOpen({ images }) {
     return (
         <div className='portfolio-open'>
            <Container fluid="md">
                 <Row>
-                    <Col sm={4}>
-                      <div style={{justifyContent: 'center', display: 'flex'}} >
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
-                    <Col sm={4}>
-                    <div>
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
-                    <Col sm={4}>
-                      <div>
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col sm={4}>
-                      <div >
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
-                    <Col sm={4}>
-                    <div>
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
-                    <Col sm={4}>
-                      <div>
-                        <ResponsiveImage
-                            src={pic}
-                            width={ 200 }
-                            height={ 150 } />
-                        </div>
-                    </Col>
+                {images.map((src, index) => (
+                  <Col sm={4} key={index}>
+                  <div style={{justifyContent: 'center', display: 'flex'}} >
+                    <ResponsiveImage
+                        src={src}
+                        width={ 200 }
+                        height={ 150 } />
+                    </div>
+                </Col>
+             ))}
                 </Row>
             </Container>
         </div>     
-    )}
-
-    return (
-      <div></div>
-  )
-    
+    )  
     ;}
 
     function ResponsiveImage( { src, width, height } ) {
