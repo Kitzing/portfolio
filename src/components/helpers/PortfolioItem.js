@@ -42,7 +42,7 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
       <div className='portfolio-item'>
         <Container fluid="md">
           <Row>
-            <Col sm={6} style={{display: 'flex'}}>
+            <Col sm={{span: 6, order: 'first'}} xs={{ order: 'last' }} md={{ order: 'first' }} style={{display: 'flex'}}>
               <div style={{marginTop: 'auto'}}>
                 <PortfolioInfo name={name} date={date} info={info} left={false} />
                 <div style={{display: 'flex', justifyContent: 'center'}}>

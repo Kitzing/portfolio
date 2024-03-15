@@ -11,7 +11,7 @@ function Home() {
     <div id="home" className="wrapper">
       <Container className='container' fluid="md">
         <Row className="text-container">
-          <Col sm={6}> <h1>Sara Kitzing</h1>
+          <Col sm={{span: 6, order: 'first'}} xs={{ order: 'last' }} md={{ order: 'first' }}> <h1>Sara Kitzing</h1>
             <div className='about-container'>
               <p style={{width: '90%'}}>A front-end developer with an interest in design and users.  I enjoy the challenge of finding admirable solutions and are looking forward to developing and deepen my knowledge.</p>
             </div>
