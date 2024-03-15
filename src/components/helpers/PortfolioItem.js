@@ -5,7 +5,7 @@ import PortfolioItemOpen from './PortfolioItemOpen.js';
 import PortfolioInfo from './PortfolioInfo.js';
 import ResponsiveImage from './ResponsiveImage.js';
 
-function PortfolioItem({ name, date, image, moreImages, info, left }) {
+function PortfolioItem({ item, left }) {
   const [isOpen, setIsOpen] = useState(false)
   if(left){
     return (
@@ -15,14 +15,14 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
               <Col sm={6}>
                 <div className='portfolio-image'>
                   <ResponsiveImage
-                      src={image}
+                      src={item.image}
                       width={ 500 }
                       height={ 300 } />
                 </div>
               </Col>
               <Col sm={6} style={{display: 'flex'}}>
                 <div style={{marginTop: 'auto'}}>
-                    <PortfolioInfo name={name} date={date} info={info} left={true} />
+                    <PortfolioInfo name={item.name} date={item.date} info={item.info} left={true} />
                     <div style={{display: 'flex', justifyContent: 'center'}}>
                       <Button variant='dark' onClick={() => setIsOpen(!isOpen)} aria-controls='collapseId'>{isOpen ? 'Close' : 'See more'}</Button>
                     </div>
@@ -32,7 +32,7 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
           </Container>
           <Collapse in={isOpen}>
             <div id='collapseId'>
-              <PortfolioItemOpen images={moreImages} />
+              <PortfolioItemOpen images={item.moreImages} />
             </div>
           </Collapse>
       </div>     
@@ -44,7 +44,7 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
           <Row>
             <Col sm={{span: 6, order: 'first'}} xs={{ order: 'last' }} md={{ order: 'first' }} style={{display: 'flex'}}>
               <div style={{marginTop: 'auto'}}>
-                <PortfolioInfo name={name} date={date} info={info} left={false} />
+                <PortfolioInfo name={item.name} date={item.date} info={item.info} left={false} />
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                   <Button variant='dark' onClick={() => setIsOpen(!isOpen)} aria-controls='collapseId'>{isOpen ? 'Close' : 'See more'}</Button>
                 </div>
@@ -52,7 +52,7 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
             </Col>
                 <Col sm={6}>
                 <ResponsiveImage
-                    src={image}
+                    src={item.image}
                     width={ 500 }
                     height={ 300 } />
                 </Col>
@@ -60,7 +60,7 @@ function PortfolioItem({ name, date, image, moreImages, info, left }) {
         </Container>
         <Collapse in={isOpen}>
           <div id='collapseId'>
-            <PortfolioItemOpen images={moreImages} />
+            <PortfolioItemOpen images={item.moreImages} />
           </div>
         </Collapse>
       </div>
