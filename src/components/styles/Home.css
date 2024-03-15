@@ -1,16 +1,6 @@
 .wrapper {
-    width: 100%;
-    height: 550px;
-    margin: 0 auto;
-    position: relative;
-    margin-bottom: 100px;
-  }
-
-.background {
-    width: 100%;
-    margin-top: -60px;
-    position: absolute;
-    z-index: -1;
+    padding-bottom: 40px;
+    padding-top: 70px;
   }
 
   .container {
@@ -41,19 +31,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .responsive-image {
-    position: relative;
-    max-width: 100%;
-  }
-  
-  .responsive-image__image {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
   }

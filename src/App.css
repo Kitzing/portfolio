@@ -19,11 +19,38 @@ p {
 .footer {
   font-size: 13px !important;
   text-align: center;
-  margin-top: 10px;
+  padding-top: 10px;           
 }
 
 .contact {
-  margin-top: 50px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
+}
+
+.header-background {
+  width: 100%;
+  margin-top: -10px;
+  z-index: -1;
+}
+
+.footer-background {
+  width: 100%;
+  margin-bottom: -10px;
+
+}
+
+.responsive-image {
+  position: relative;
+  max-width: 100%;
+}
+
+.responsive-image__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

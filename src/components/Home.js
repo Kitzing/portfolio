@@ -4,13 +4,11 @@ import { Container, Row, Col, Button } from 'react-bootstrap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Skills from './helpers/Skills.js'
 import ResponsiveImage from './helpers/ResponsiveImage.js'
-import background from '../resources/header_background.svg';
 import pic from '../resources/pic.svg'
 
 function Home() {
   return (
     <div id="home" className="wrapper">
-      <img className="background" src={background} alt="background" />
       <Container className='container' fluid="md">
         <Row className="text-container">
           <Col sm={6}> <h1>Sara Kitzing</h1>
