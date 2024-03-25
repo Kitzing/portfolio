@@ -16,6 +16,11 @@ p {
   color: black;
 }
 
+li {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
 .footer {
   font-size: 13px !important;
   text-align: center;
