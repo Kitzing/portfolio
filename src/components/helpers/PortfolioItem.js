@@ -16,8 +16,8 @@ function PortfolioItem({ item, left }) {
                 <div className='portfolio-image'>
                   <ResponsiveImage
                       src={item.image}
-                      width={ 500 }
-                      height={ 300 } />
+                      width={ 600 }
+                      height={ 400 } />
                 </div>
               </Col>
               <Col sm={6} style={{display: 'flex'}}>
@@ -53,8 +53,8 @@ function PortfolioItem({ item, left }) {
                 <Col sm={6}>
                 <ResponsiveImage
                     src={item.image}
-                    width={ 500 }
-                    height={ 300 } />
+                    width={ 600 }
+                    height={ 400 } />
                 </Col>
           </Row>
         </Container>
