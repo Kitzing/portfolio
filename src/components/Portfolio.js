@@ -4,8 +4,14 @@ import exjobb from '../resources/exjobb/exjobb.png'
 import assistansposition from '../resources/exjobb/assistansposition.png'
 import weatherstation from '../resources/exjobb/weatherstation.png'
 import list from '../resources/exjobb/list.png'
-import exetition from '../resources/exetition.png'
-import disgeyesed from '../resources/disgeyesed.png'
+import exetition from '../resources/exetition/exetition.png'
+import home from '../resources/exetition/home.png'
+import profiles from '../resources/exetition/profiles.png'
+import notifications from '../resources/exetition/notifications.png'
+import disgeyesed from '../resources/disgeyesed/disgeyesed.png'
+import startpage from '../resources/disgeyesed/start.png'
+import game from '../resources/disgeyesed/game.png'
+import heatmap from '../resources/disgeyesed/heatmap.png'
 import argama from '../resources/argama/argama.png'
 import index  from '../resources/argama/index.jpg'
 import pongview from '../resources/argama/pongview.jpg'
@@ -49,10 +55,10 @@ function Portfolio() {
                 info: 'I executed this project on my own, with support from my supervisor. The research question was "How do you design a mobile application to motivate and support goal achievement in the context of exercising?" which was answered by creating a prototype. The target group for the project was students.',
                 area: 'Mobile application design // Designing for motivation',
                 skills: 'Adobe XD',
-                images: [exetition, exetition, exetition],
-                height: 300,
-                process: 'The project was divided into 3 iterations, each two weeks long, and used the Design Thinking process. It ended with a one-week-long evaluation period where the test subjects got to use a mock-up of the application while competing against a friend on how well they achieved their own goals.',
-                methods: ['Semi-structured interviews', 'Brainstorming', 'Mood board', 'Literature study', 'Sketching', 'A/B-evaluation', 'Mission impossible', 'Low-fidelity prototyping', 'High-fidelity prototyping', 'Usability testing', 'Interview in pairs' ]
+                images: [home, profiles, notifications],
+                height: 487,
+                process: 'The project was divided into three iterations, each two weeks long, and used the Design Thinking process. It ended with a one-week-long evaluation period where the test subjects got to use a mock-up of the application while competing against a friend on how well they achieved their own goals.',
+                methods: ['Semi-structured interviews', 'Brainstorming', 'Mood board', 'Literature study', 'Sketching', 'A/B-evaluation', 'Mission impossible', 'Low-fidelity prototyping', 'High-fidelity prototyping', 'Usability testing', 'Interview in pairs' ],
             },
         },
         {name: 'Disgeyesed', 
@@ -60,13 +66,14 @@ function Portfolio() {
             info: 'The project was a collaboration with Universeum on the topic \"The Quantified Self\". My group created a simple game focused on finding stars hidden in a social media context. The application shows a heatmap of where the user has looked when all stars are found. The target group was 12-16 year old.',
             image: disgeyesed, 
             moreInfo: {
-                info: 'The main idea of the concept was to teach young adults how their brains work and how attention may be affected by the social media context. The results are published on the project website https://www.idxpo.se/2020/disgeyesed/index.html.',
+                info: 'The main idea was to teach young adults how their brains work and how attention may be affected by the social media context. The product was a game that uses an ordinary web camera to track the user\'s eyes when searching for icons in a social media context.',
                 area: 'Interaction design // Eye-tracking',
                 skills: 'Figma // HTML // SVG // JavaScript',
-                images: [disgeyesed, disgeyesed, disgeyesed],
-                height: 300,
+                images: [startpage, game, heatmap],
+                height: 281,
                 process: 'The project was eight weeks long and divided into three iterations. The final result was created using HTML, SVG files, JavaScript, and GazeRecorder\'s GazeCloudAPI and heatMap.js for the eye-tracking function.',
-                methods: ['Brainstormig', 'Brainwriting', 'Storyboard', 'Mood board', 'Crazy Eight\'s', 'Low-fidelity prototyping', 'Morphological matrix', 'Think-aloud protocol', 'KJ analysis', 'Implementation']
+                methods: ['Brainstormig', 'Brainwriting', 'Storyboard', 'Mood board', 'Crazy Eight\'s', 'Low-fidelity prototyping', 'Morphological matrix', 'Think-aloud protocol', 'KJ analysis', 'Implementation'],
+                url: 'https://www.idxpo.se/2020/disgeyesed/index.html'
             },
         },
         {name: 'Keychain', 
@@ -74,14 +81,15 @@ function Portfolio() {
             info: 'A project for the course Mobile Computing at Chalmers University of Technology. The goal was to design a new, innovative action on the theme authentication and access. Our idea was an application for sharing keys with others through your phone.', 
             image: keychain, 
             moreInfo: {
-                info: 'More information can be found on the {{<a href=\"https://kitzing.github.io/TemporaryDigitalKeys\">project website</a>}}.',
+                info: 'This specific project focused on physical access with the approach of Designing for the real world. The result was the prototype Keychain - an app that makes it possible to share keys with anyone - right through the phone!',
                 area: 'Mobile computing // Authentication and access',
                 skills: 'Figma // Android studios // Kotlin',
                 images: [lendedkeys, receivedkeys, mykeys],
                 height: 535,
                 width: 247,
-                process: 'The project was conducted in two iterations, each a weeklong. Where the goal was to find the features needed and evaluate our idea.',
-                methods: ['Brainstorming', 'Low-fidelity prototyping', 'Heuristic evaluation', 'Brainwriting', 'Interactive prototype', 'Evaluation interview', 'Implementation' ]
+                process: 'The project was conducted in two iterations, each a weeklong. Where the goal was to find the features needed and evaluate our idea. The result of the iterations then got implemented in Kotlin, creating an application with a functioning interaction flow.',
+                methods: ['Brainstorming', 'Low-fidelity prototyping', 'Heuristic evaluation', 'Brainwriting', 'Interactive prototype', 'Evaluation interview', 'Implementation' ],
+                url: 'https://kitzing.github.io/TemporaryDigitalKeys',
             },
         },
         {name: 'Let\'s talk sugar', 
@@ -117,7 +125,7 @@ function Portfolio() {
             info: 'Bachelor thesis done with five other students in the Software Engineering program. The purpose was to develop a web application for students where they could create a game by writing a game plan in plain English.',
             image: argama, 
             moreInfo: {
-                info: 'Developing a user friendly and pedagogical web application that uses a controlled natural language to interpret a game description and translate it into code.',
+                info: 'Developing a user friendly and pedagogical web application that uses a controlled natural language to interpret a game description and translate it into code. The goals were to use modern coding practices and principles in the development, and the application should contain similar functionality as the existing website GameChangineer while being more user-friendly. The outcome of the project was a web application using mostly modern practices and principles, with a functionality close to the GameChangineer website, but less complex. The final user test showed that the application’s user experience improved compared to GameChangineer.',
                 area: 'Front-end // Game generation',
                 skills: 'HTML // CSS // JavaScript',
                 images: [index, pongview, advactions],

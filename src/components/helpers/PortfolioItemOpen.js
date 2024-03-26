@@ -1,24 +1,29 @@
 import '../styles/Portfolio.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import ResponsiveImage from './ResponsiveImage.js'
+import ModalImage from "react-modal-image"
 
 function PortfolioItemOpen({ moreInfo }) {
     return (
         <div className='portfolio-open'>
            <Container fluid="md">
-            <Row>
+            <Row style={{marginTop: '10px'}}>
               <p>{moreInfo.info}</p>
-              <p style={{fontStyle: 'italic', marginBottom: '5px'}}>{moreInfo.area}</p>
-            <p style={{fontStyle: 'italic'}}>{moreInfo.skills}</p>
+              <p style={{fontSize: '15px'}}>
+                  <b>Areas and technologies:</b> <br />
+                  <i>{moreInfo.area} <br />
+                  {moreInfo.skills}
+                  </i>
+              </p>
             </Row>
-            <Row>
+            <Row style={{marginTop: '20px'}}>
                   {moreInfo.images.map((src, index) => (
-                    <Col sm={4} key={index}>
+                    <Col style={{paddingBottom: '20px'}} sm={4} key={index}>
                       <div style={{justifyContent: 'center', display: 'flex'}}>
-                        <ResponsiveImage
-                            src={src}
-                            width={ moreInfo.width ?? 500 }
-                            height={ moreInfo.height } />
+                      <ModalImage
+                        small={src}
+                        large={src}
+                        alt=""
+                      />
                       </div>
                     </Col>
                   ))}
@@ -36,6 +41,10 @@ function PortfolioItemOpen({ moreInfo }) {
                 ))}
               </ul>
               </Col>
+              {moreInfo.url && 
+              <p style={{fontSize: '16px'}}>
+                See <a className='link' href={moreInfo.url} target="_blank"> project website</a> for more information
+              </p>}
             </Row>
             </Container>
         </div>     

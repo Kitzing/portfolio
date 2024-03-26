@@ -21,8 +21,9 @@ function About() {
               <div>
                 <h3 className='header-container'>Hi!</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  I'm Sara, a positive and ambitious person seeking new ways to express my creativity. Whether it's crocheting, whipping up something in the kitchen, or discovering new objects to photograph, I'm constantly motivated by my passion for creativity.
+
+                  That's also why I appreciate the combination of programming and design; it merges problem-solving with the freedom of creativity. In my work, I enjoy focusing on the users and how to make a product appealing and easy to use for them.
                 </p>
                 <p style={{fontSize: '15px'}}>
                   <b>Education:</b> <br />
