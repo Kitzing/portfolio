@@ -7,8 +7,7 @@ function PortfolioInfo({ name, date, info, left }) {
             <p className='date-text' style={{textAlign: left ? 'left' : 'right'}}>{date}</p>
             <p style={{textAlign: left ? 'left' : 'right'}}>{info}</p>
         </div>
-
-    )
-    ;}
+    );
+}
 
 export default PortfolioInfo;

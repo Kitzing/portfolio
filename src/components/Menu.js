@@ -20,6 +20,7 @@ function Menu() {
                 </Navbar.Collapse>
             </Navbar>
         </div>
-    );}
+    );
+}
 
 export default Menu;

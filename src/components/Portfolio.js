@@ -25,7 +25,6 @@ import start from '../resources/spinnaren/start.png'
 import bookroom from '../resources/spinnaren/bookroom.png'
 import bookings from '../resources/spinnaren/bookings.png'
 import sugar from '../resources/sugar/sugar.png'
-import intro from '../resources/sugar/intro.png'
 import toomuch from '../resources/sugar/toomuch.png'
 import dailyintake from '../resources/sugar/dailyintake.png'
 import danger from '../resources/sugar/danger.png'
@@ -33,7 +32,8 @@ import danger from '../resources/sugar/danger.png'
 
 function Portfolio() {
     const portfolioData = [
-        {name: 'Designing for Maritime Coordination', 
+        {
+            name: 'Designing for Maritime Coordination', 
             date: 'Spring 2021', 
             info: 'Master thesis done at the Interaction design and technologies master. The master thesis was a collaboration with the Swedish Sea Rescue Society, where we investigated how to design a coordination system for maritime rescue.', 
             image: exjobb, 
@@ -47,7 +47,8 @@ function Portfolio() {
                 methods: ['Litterature Study', 'Interviews', 'Personas', 'Low-fidelity Prototype', 'Evaluation', 'MoSCoW', 'Sketches', 'Six Thinking Hats', 'Cognitive Walkthrough', 'Heuristic Evaluation', 'Interactive Prototype', 'Usability Testing', 'Think-aloud Protocol']
             },
         },
-        {name: 'Exercise motivation', 
+        {
+            name: 'Exercise motivation', 
             date: 'Autumn 2020', 
             info: 'An 8 weeklong individual project course where I came up with an idea and fulfilled it by myself.  The research was about designing for motivation to work out and ended in a mobile application design where the participants competed against each other by achieving their own goals.', 
             image: exetition, 
@@ -61,7 +62,8 @@ function Portfolio() {
                 methods: ['Semi-structured interviews', 'Brainstorming', 'Mood board', 'Literature study', 'Sketching', 'A/B-evaluation', 'Mission impossible', 'Low-fidelity prototyping', 'High-fidelity prototyping', 'Usability testing', 'Interview in pairs' ],
             },
         },
-        {name: 'Disgeyesed', 
+        {
+            name: 'Disgeyesed', 
             date: 'Autumn 2020', 
             info: 'The project was a collaboration with Universeum on the topic \"The Quantified Self\". My group created a simple game focused on finding stars hidden in a social media context. The application shows a heatmap of where the user has looked when all stars are found. The target group was 12-16 year old.',
             image: disgeyesed, 
@@ -76,7 +78,8 @@ function Portfolio() {
                 url: 'https://www.idxpo.se/2020/disgeyesed/index.html'
             },
         },
-        {name: 'Keychain', 
+        {
+            name: 'Keychain', 
             date: 'Autumn 2020', 
             info: 'A project for the course Mobile Computing at Chalmers University of Technology. The goal was to design a new, innovative action on the theme authentication and access. Our idea was an application for sharing keys with others through your phone.', 
             image: keychain, 
@@ -92,7 +95,8 @@ function Portfolio() {
                 url: 'https://kitzing.github.io/TemporaryDigitalKeys',
             },
         },
-        {name: 'Let\'s talk sugar', 
+        {
+            name: 'Let\'s talk sugar', 
             date: 'Spring 2020', 
             info: 'A project for the course Information Visualization at Chalmers University of Technology. The purpose was to provide information on any subject in an informative way. We decided to focus on informing you about sugar consumption and how it affects you.', 
             image: sugar, 
@@ -106,7 +110,8 @@ function Portfolio() {
                 methods: []
             },
         },
-        {name: 'Wärdshuset Spinnaren', 
+        {
+            name: 'Wärdshuset Spinnaren', 
             date: 'Autumn 2019', 
             info: 'Individual project for the course Graphical Interfaces at Chalmers University of Technology. The purpose was to design a system for scheduling and room booking for a small hotel for the visitors and the staff. The hotel was 1800s-themed, including clothes to wear from that time.',
             image: spinnaren, 
@@ -120,7 +125,8 @@ function Portfolio() {
                 methods: []
             },
         },
-        {name: 'Argama', 
+        {
+            name: 'Argama', 
             date: 'Spring 2018', 
             info: 'Bachelor thesis done with five other students in the Software Engineering program. The purpose was to develop a web application for students where they could create a game by writing a game plan in plain English.',
             image: argama, 
@@ -138,9 +144,9 @@ function Portfolio() {
     return (
         <div id="portfolio" className='portfolio-section'>
             <h1 className='header'>PORTFOLIO</h1>
-            {portfolioData.map((item, index) => (
-                    <PortfolioItem item={item} left={!(index % 2)} key={index}/>
-                    ))}
+            { portfolioData.map((item, index) => (
+                <PortfolioItem item={item} left={!(index % 2)} key={index}/>
+            ))}
         </div>
     );}
 

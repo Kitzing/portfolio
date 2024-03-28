@@ -22,12 +22,13 @@ function About() {
                 <h3 className='header-container'>Hi!</h3>
                 <p>
                   I'm Sara, a positive and ambitious person seeking new ways to express my creativity. Whether it's crocheting, whipping up something in the kitchen, or discovering new objects to photograph, I'm constantly motivated by my passion for creativity.
-
                   That's also why I appreciate the combination of programming and design; it merges problem-solving with the freedom of creativity. In my work, I enjoy focusing on the users and how to make a product appealing and easy to use for them.
                 </p>
                 <p style={{fontSize: '15px'}}>
-                  <b>Education:</b> <br />
-                  MSc. Interaction design and technologies, Chalmers University of Technology<br />
+                  <b>Education:</b> 
+                  <br />
+                  MSc. Interaction design and technologies, Chalmers University of Technology
+                  <br />
                   BSc. Software engineering, Chalmers University of Technology
                 </p>
                 <div className='contact-container'>
@@ -54,4 +55,5 @@ function About() {
     </div>
   );
 }
+
 export default About;
