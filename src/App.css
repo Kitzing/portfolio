@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap');
 
-h1, h2, h3{
+h1, h2, h3 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -12,7 +12,7 @@ h1, h2, h3{
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  text-align:justify;
+  text-align: justify;
   color: black;
 }
 
@@ -42,7 +42,15 @@ li {
 .footer-background {
   width: 100%;
   margin-bottom: -10px;
+}
 
+.link {
+  text-decoration: none !important;
+  color: rgb(80, 96, 165) !important;
+}
+  
+.link:hover {
+  color: rgb(17, 20, 31) !important;
 }
 
 .responsive-image {

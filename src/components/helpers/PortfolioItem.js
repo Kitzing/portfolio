@@ -34,7 +34,7 @@ function PortfolioItem({ item, left }) {
           </Row>
         </Container>
         <Collapse in={isOpen}>
-          <div id='collapseId'>
+          <div>
             <PortfolioItemOpen moreInfo={item.moreInfo} />
           </div>
         </Collapse>
@@ -64,7 +64,7 @@ function PortfolioItem({ item, left }) {
           </Row>
         </Container>
         <Collapse in={isOpen}>
-          <div id='collapseId'>
+          <div>
             <PortfolioItemOpen moreInfo={item.moreInfo} />
           </div>
         </Collapse>

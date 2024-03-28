@@ -24,12 +24,3 @@
     padding: 20px 0px;
     text-align: center;
 }
-
-.link {
-    text-decoration: none !important;
-    color: rgb(80, 96, 165) !important;
-    }
-    
-.link:hover {
-    color: rgb(17, 20, 31) !important;
-}

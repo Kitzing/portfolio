@@ -3,10 +3,6 @@
     padding-top: 70px;
   }
 
-  .container {
-    padding-top: 5%;
-  }
-
   .top-distance {
     margin-top: 20px;
     display: flex;
@@ -25,6 +21,8 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
+    align-items: end;
   }
 
   .about-container {

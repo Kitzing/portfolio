@@ -17,7 +17,7 @@ function About() {
                       width={ 309 }
                       height={ 450 } />
             </Col>
-            <Col sm={7} className='text-container'>
+            <Col sm={7} className='about-text'>
               <div>
                 <h3 className='header-container'>Hi!</h3>
                 <p>
@@ -38,7 +38,7 @@ function About() {
                       </button>
                   </a>
                   <a href="mailto:contact@sarakitzing.se">
-                      <button type="button" className="btn rounded-circle icon-size ">
+                      <button type="button" className="btn rounded-circle icon-size">
                           <div> <MdEmail size={25} color='#ffffff'/> </div>
                       </button>
                   </a>

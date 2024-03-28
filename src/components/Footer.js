@@ -2,7 +2,7 @@ import { MdEmail } from 'react-icons/md';
 
 function Footer() {
     return (
-        <div id="contact" style={{paddingBottom: '5px'}}>
+        <div id="contact" style={{ paddingBottom: '5px' }}>
             <div className='contact'>
                 <p> <MdEmail size={20}/> contact(a)sarakitzing.se </p>
             </div>

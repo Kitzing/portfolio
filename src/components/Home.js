@@ -8,8 +8,8 @@ import image from '../resources/home_image.svg'
 
 function Home() {
   return (
-    <div id="home" className="wrapper">
-      <Container className='container' fluid="md">
+    <div id="home" className='wrapper'>
+      <Container style={{ paddingTop: '5%' }} fluid="md">
         <Row className="text-container">
           <Col sm={{span: 6, order: 'first'}} xs={{ order: 'last' }} md={{ order: 'first' }}> <h1>Sara Kitzing</h1>
             <div className='about-container'>
