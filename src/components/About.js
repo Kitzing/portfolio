@@ -14,6 +14,7 @@ function About() {
             <Col sm={4}> 
               <ResponsiveImage
                       src={aboutimage}
+                      alt='Picture of Sara'
                       width={ 309 }
                       height={ 450 } />
             </Col>
@@ -32,18 +33,18 @@ function About() {
                   BSc. Software engineering, Chalmers University of Technology
                 </p>
                 <div className='contact-container'>
-                  <a href="https://www.linkedin.com/in/sara-kitzing/">
-                      <button type="button" className="btn rounded-circle icon-size">
+                  <a href="https://www.linkedin.com/in/sara-kitzing/" target="_blank">
+                      <button type="button" className="btn rounded-circle icon-size" aria-label='LinkedIn'>
                           <div> <FaLinkedinIn size={25} color='#ffffff'/> </div>
                       </button>
                   </a>
                   <a href="mailto:contact@sarakitzing.se">
-                      <button type="button" className="btn rounded-circle icon-size">
+                      <button type="button" className="btn rounded-circle icon-size" aria-label='Email'>
                           <div> <MdEmail size={25} color='#ffffff'/> </div>
                       </button>
                   </a>
-                  <a href="https://github.com/Kitzing">
-                      <button type="button" className="btn rounded-circle icon-size">
+                  <a href="https://github.com/Kitzing" target="_blank">
+                      <button type="button" className="btn rounded-circle icon-size" aria-label='Github'>
                           <div> <FaGithub size={25} color='#ffffff' /> </div>
                       </button> 
                       </a>

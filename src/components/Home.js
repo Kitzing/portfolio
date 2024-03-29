@@ -14,17 +14,20 @@ function Home() {
           <Col sm={{span: 6, order: 'first'}} xs={{ order: 'last' }} md={{ order: 'first' }}> <h1>Sara Kitzing</h1>
             <div className='about-container'>
               <p style={{width: '90%'}}>
-                A front-end developer with an interest in UX.  I enjoy the challenge of finding the admirable solution that meets the customers' needs.
+                A front-end developer with an interest in UX. I enjoy the challenge of finding the admirable solution that meets the customers' needs.
               </p>
             </div>
             <Skills skills={['Vue', 'React', 'TypeScript', 'GraphQL', 'Figma']} />
             <AnchorLink href='#about'>
-              <Button variant='dark' className='top-distance'>More information</Button>
+              <Button variant='dark' className='top-distance' aria-label='More information'>
+                More information
+              </Button>
             </AnchorLink>
           </Col>
           <Col sm={5} className='image-container'>
             <ResponsiveImage
                 src={image}
+                alt='Picture of Sara'
                 width={ 309 }
                 height={ 450 } />
           </Col>

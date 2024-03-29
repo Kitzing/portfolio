@@ -36,7 +36,10 @@ function Portfolio() {
             name: 'Designing for Maritime Coordination', 
             date: 'Spring 2021', 
             info: 'Master thesis done at the Interaction design and technologies master. The master thesis was a collaboration with the Swedish Sea Rescue Society, where we investigated how to design a coordination system for maritime rescue.', 
-            image: exjobb, 
+            image: {
+                src: exjobb, 
+                alt: 'Two monitors showing, one showing event information and the other showing a map over the ocean'
+            },
             moreInfo: {
                 info: 'The purpose of this thesis was to explore how to best present information to an operator at a maritime coordination centre. To research this, a collaboration with the Swedish Sea Rescue Society (SSRS) was made. SSRS is a volunteer rescue society that aids with rescue operations on Swedish and bordering countries’ waters. Over the years, they have grown to the point where they need a physical coordination centre to properly perform their work. This project contributes to the centre by investigating how to design a system for such a centre and resulted in Guidelines for Presenting Information in a Maritime Coordination Centre for Rescue Societies.',
                 area: 'Interaction design // Information Visualization // Maritime coordination centre',
@@ -44,14 +47,17 @@ function Portfolio() {
                 images: [assistansposition, list, weatherstation],
                 height: 281,
                 process: 'The project was executed through a literature study and an initial pre-study to collect the relevant information needed. An iterative design process was then applied, including three iterations. For each iteration, a prototype was created, and guidelines were refined. The final prototype included two monitors, one for event information and the other for a map view, which was connected through shortcuts. User tests showed the prototype being understandable and usable for the on-call workers at SSRS.',
-                methods: ['Litterature Study', 'Interviews', 'Personas', 'Low-fidelity Prototype', 'Evaluation', 'MoSCoW', 'Sketches', 'Six Thinking Hats', 'Cognitive Walkthrough', 'Heuristic Evaluation', 'Interactive Prototype', 'Usability Testing', 'Think-aloud Protocol']
+                methods: ['Litterature study', 'Interviews', 'Personas', 'Low-fidelity prototype', 'Evaluation', 'MoSCoW', 'Sketches', 'Six Thinking Hats', 'Cognitive walkthrough', 'Heuristic Evaluation', 'Interactive prototype', 'Usability testing', 'Think-aloud Protocol']
             },
         },
         {
             name: 'Exercise motivation', 
             date: 'Autumn 2020', 
-            info: 'An 8 weeklong individual project course where I came up with an idea and fulfilled it by myself.  The research was about designing for motivation to work out and ended in a mobile application design where the participants competed against each other by achieving their own goals.', 
-            image: exetition, 
+            info: 'An 8 weeklong individual project course where I came up with an idea and fulfilled it by myself.  The research was about designing for motivation to exercise and ended in a mobile application design where the participants competed against each other by achieving their own goals.', 
+            image: {
+                src: exetition, 
+                alt: 'Three mobiles showing the views of add workout, scoreboard, and user\'s profile',
+            },
             moreInfo: {
                 info: 'I executed this project on my own, with support from my supervisor. The research question was "How do you design a mobile application to motivate and support goal achievement in the context of exercising?" which was answered by creating a prototype. The target group for the project was students.',
                 area: 'Mobile application design // Designing for motivation',
@@ -66,7 +72,10 @@ function Portfolio() {
             name: 'Disgeyesed', 
             date: 'Autumn 2020', 
             info: 'The project was a collaboration with Universeum on the topic \"The Quantified Self\". My group created a simple game focused on finding stars hidden in a social media context. The application shows a heatmap of where the user has looked when all stars are found. The target group was 12-16 year old.',
-            image: disgeyesed, 
+            image: {
+                src: disgeyesed,
+                alt: 'A laptop showing the home page of the Disgeyesed game' 
+            },
             moreInfo: {
                 info: 'The main idea was to teach young adults how their brains work and how attention may be affected by the social media context. The product was a game that uses an ordinary web camera to track the user\'s eyes when searching for icons in a social media context.',
                 area: 'Interaction design // Eye-tracking',
@@ -74,7 +83,7 @@ function Portfolio() {
                 images: [startpage, game, heatmap],
                 height: 281,
                 process: 'The project was eight weeks long and divided into three iterations. The final result was created using HTML, SVG files, JavaScript, and GazeRecorder\'s GazeCloudAPI and heatMap.js for the eye-tracking function.',
-                methods: ['Brainstormig', 'Brainwriting', 'Storyboard', 'Mood board', 'Crazy Eight\'s', 'Low-fidelity prototyping', 'Morphological matrix', 'Think-aloud protocol', 'KJ analysis', 'Implementation'],
+                methods: ['Brainstormig', 'Brainwriting', 'Storyboard', 'Mood board', 'Crazy Eight\'s', 'Low-fidelity prototyping', 'Morphological Matrix', 'Think-aloud Protocol', 'KJ analysis', 'Implementation'],
                 url: 'https://www.idxpo.se/2020/disgeyesed/index.html'
             },
         },
@@ -82,7 +91,10 @@ function Portfolio() {
             name: 'Keychain', 
             date: 'Autumn 2020', 
             info: 'A project for the course Mobile Computing at Chalmers University of Technology. The goal was to design a new, innovative action on the theme authentication and access. Our idea was an application for sharing keys with others through your phone.', 
-            image: keychain, 
+            image: { 
+                src: keychain,
+                alt: 'Mobiles showing the inerface for the Keychain application, including the views of Lended keys and Recieved keys' 
+            },
             moreInfo: {
                 info: 'This specific project focused on physical access with the approach of Designing for the real world. The result was the prototype Keychain - an app that makes it possible to share keys with anyone - right through the phone!',
                 area: 'Mobile computing // Authentication and access',
@@ -99,7 +111,10 @@ function Portfolio() {
             name: 'Let\'s talk sugar', 
             date: 'Spring 2020', 
             info: 'A project for the course Information Visualization at Chalmers University of Technology. The purpose was to provide information on any subject in an informative way. We decided to focus on informing you about sugar consumption and how it affects you.', 
-            image: sugar, 
+            image: {
+                src: sugar,
+                alt: 'A computer screen showing the home page of the Let\'s tlak sugar screen, including a worldmap of sugar consumption in 2013'
+            }, 
             moreInfo: {
                 info: '',
                 area: 'Information Visualization',
@@ -114,7 +129,10 @@ function Portfolio() {
             name: 'Wärdshuset Spinnaren', 
             date: 'Autumn 2019', 
             info: 'Individual project for the course Graphical Interfaces at Chalmers University of Technology. The purpose was to design a system for scheduling and room booking for a small hotel for the visitors and the staff. The hotel was 1800s-themed, including clothes to wear from that time.',
-            image: spinnaren, 
+            image: {
+                src: spinnaren,
+                alt: 'A laptop screen showing the home page for the \"Wärdshuset Spinnaren\" hotel. Including an image of the hotel and booking possibilities at the top.',
+            }, 
             moreInfo: {
                 info: '',
                 area: 'Graphical interfaces',
@@ -129,7 +147,10 @@ function Portfolio() {
             name: 'Argama', 
             date: 'Spring 2018', 
             info: 'Bachelor thesis done with five other students in the Software Engineering program. The purpose was to develop a web application for students where they could create a game by writing a game plan in plain English.',
-            image: argama, 
+            image: {
+                src:argama,
+                alt: 'A laptop screen showing the game Argama where you have the possibility to chose a game to create or to skip the tutorial'
+            }, 
             moreInfo: {
                 info: 'Developing a user friendly and pedagogical web application that uses a controlled natural language to interpret a game description and translate it into code. The goals were to use modern coding practices and principles in the development, and the application should contain similar functionality as the existing website GameChangineer while being more user-friendly. The outcome of the project was a web application using mostly modern practices and principles, with a functionality close to the GameChangineer website, but less complex. The final user test showed that the application’s user experience improved compared to GameChangineer.',
                 area: 'Front-end // Game generation',
