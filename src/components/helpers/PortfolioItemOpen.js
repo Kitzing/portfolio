@@ -22,7 +22,7 @@ function PortfolioItemOpen({ moreInfo }) {
               { moreInfo.images.map((src, index) => (
                 <Col style={{paddingBottom: '20px'}} sm={4} key={index}>
                   <div style={{justifyContent: 'center', display: 'flex'}}>
-                    <ModalImage small={src} large={src} alt="" />
+                    <ModalImage small={src} large={src} alt="" hideDownload hideZoom />
                   </div>
                 </Col>
               ))}
