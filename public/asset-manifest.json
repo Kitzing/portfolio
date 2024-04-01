@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2827a7d2.chunk.css",
+    "main.js": "./static/js/main.c30e8ff7.chunk.js",
+    "main.js.map": "./static/js/main.c30e8ff7.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.410a4481.js",
+    "runtime-main.js.map": "./static/js/runtime-main.410a4481.js.map",
+    "static/css/2.a25299aa.chunk.css": "./static/css/2.a25299aa.chunk.css",
+    "static/js/2.3e9cbba5.chunk.js": "./static/js/2.3e9cbba5.chunk.js",
+    "static/js/2.3e9cbba5.chunk.js.map": "./static/js/2.3e9cbba5.chunk.js.map",
+    "static/js/3.21e1527d.chunk.js": "./static/js/3.21e1527d.chunk.js",
+    "static/js/3.21e1527d.chunk.js.map": "./static/js/3.21e1527d.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/2.a25299aa.chunk.css.map": "./static/css/2.a25299aa.chunk.css.map",
+    "static/css/main.2827a7d2.chunk.css.map": "./static/css/main.2827a7d2.chunk.css.map",
+    "static/js/2.3e9cbba5.chunk.js.LICENSE.txt": "./static/js/2.3e9cbba5.chunk.js.LICENSE.txt",
+    "static/media/Jobbfoto18-croppad.a8c440c8.jpg": "./static/media/Jobbfoto18-croppad.a8c440c8.jpg",
+    "static/media/aboutpic.7a2e0659.jpg": "./static/media/aboutpic.7a2e0659.jpg",
+    "static/media/argama.7aa2322a.png": "./static/media/argama.7aa2322a.png",
+    "static/media/argamasquare.6098edf2.png": "./static/media/argamasquare.6098edf2.png",
+    "static/media/mdb.css": "./static/media/arrow_right.0897f985.svg",
+    "static/media/disgeyesed.0d365768.png": "./static/media/disgeyesed.0d365768.png",
+    "static/media/disgeyesedround.4d30e994.png": "./static/media/disgeyesedround.4d30e994.png",
+    "static/media/exercise.7b09bb63.png": "./static/media/exercise.7b09bb63.png",
+    "static/media/exerciseRound.8c7e958b.png": "./static/media/exerciseRound.8c7e958b.png",
+    "static/media/keychain.2ffdd583.png": "./static/media/keychain.2ffdd583.png",
+    "static/media/keychainround.865d831b.png": "./static/media/keychainround.865d831b.png",
+    "static/media/profilfoto22.1acb10f1.jpg": "./static/media/profilfoto22.1acb10f1.jpg",
+    "static/media/spinnaren.a8b99430.png": "./static/media/spinnaren.a8b99430.png",
+    "static/media/spinnarensquare.233f15a7.png": "./static/media/spinnarensquare.233f15a7.png",
+    "static/media/sugar.969573b5.png": "./static/media/sugar.969573b5.png",
+    "static/media/sugarsquare.19f63f50.png": "./static/media/sugarsquare.19f63f50.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.410a4481.js",
+    "static/css/2.a25299aa.chunk.css",
+    "static/js/2.3e9cbba5.chunk.js",
+    "static/css/main.2827a7d2.chunk.css",
+    "static/js/main.c30e8ff7.chunk.js"
+  ]
+}
